@@ -1,0 +1,200 @@
+/* Universal Box-Sizing */
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+/* General Layout */
+.admin-view-user-main {
+    min-height: max-content;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.admin-view-user {
+    max-width: 900px;
+    /* margin-left: 50px; */
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #eaeaea;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden; /* Contain any overflowing elements */
+}
+
+/* Back Button */
+.back-button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    transform: scale(1);
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+}
+
+
+/* Search Bar Styles */
+.user-list-search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px; 
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    color: #eaeaea;
+    background-color: #1e1e1e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    display: block; 
+    margin-bottom: 40px;
+}
+
+.user-list-search-bar::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.user-list-search-bar:focus {
+    border-color: #45a049;
+    box-shadow: 0 5px 10px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Invoice List */
+.invoice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Individual Invoice Item */
+.invoice-item {
+    background: linear-gradient(145deg, #2e2e2e, #3a3a3a);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow for cards */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Prevent pseudo-elements and content from overflowing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 0; /* Prevent flex elements from overflowing */
+    
+}
+
+.invoice-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Hover depth */
+}
+
+.invoice-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 60%);
+    transform: rotate(25deg);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* Prevent blocking clicks */
+}
+
+.invoice-item:hover::before {
+    opacity: 0.2; /* Soft radial glow on hover */
+}
+
+/* Invoice Details */
+.invoice-details {
+    flex: 1;
+    padding-right: 10px;
+    min-width: 0; /* Prevent content overflow in flexbox */
+}
+
+.invoice-detail {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #eaeaea;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.invoice-detail strong {
+    color: #4caf50; /* Green for labels */
+}
+
+/* View Invoice Button */
+.view-invoice-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.view-invoice-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.view-invoice-btn:active {
+    transform: scale(1);
+}
+
+/* No Invoices Message */
+.no-invoices {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .invoice-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-invoice-btn {
+        width: 100%; /* Full width button for smaller screens */
+        margin-top: 10px;
+    }
+}

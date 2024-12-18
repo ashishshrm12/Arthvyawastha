@@ -1,0 +1,188 @@
+/* Container */
+.owner-managements {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+  color: #eaeaea;
+}
+
+/* Header */
+.headers {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+/* Add Owner Section */
+.add-owner-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-fields {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #262626;
+  color: #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.input-fields:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.add-buttons {
+  background: linear-gradient(145deg, #4caf50, #3a8d41);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-buttons:hover {
+  background: linear-gradient(145deg, #45a049, #357c3a);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(76, 175, 80, 0.4);
+}
+
+.add-buttons:active {
+  transform: translateY(0);
+}
+
+/* Search Section */
+.search-sections {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bars {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #262626;
+  color: #eaeaea;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bars:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Green glow */
+  outline: none;
+}
+
+.sub-headers {
+  font-size: 1.5rem;
+  color: #eaeaea;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333; /* Professional divider */
+  padding-bottom: 10px;
+}
+
+/* Table */
+.owner-tables {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.owner-tables th, 
+.owner-tables td {
+  padding: 15px;
+  text-align: left;
+  color: #eaeaea;
+  border-bottom: 1px solid #333;
+}
+
+.owner-tables th {
+  background-color: #333;
+  color: #4caf50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.owner-tables tr:hover {
+  background-color: #3a3a3a;
+  transition: all 0.3s ease;
+}
+
+/* Buttons in Table */
+.add-invoice-btn, .delete-buttons {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add Invoice Button */
+.add-invoice-btnss {
+  background: linear-gradient(145deg, #4caf50, #388e3c); /* Green gradient */
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.add-invoice-btnss:hover {
+  background: linear-gradient(145deg, #66bb6a, #43a047); /* Lighter green on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.add-invoice-btnss:active {
+  transform: translateY(0);
+}
+
+/* Delete Button */
+.delete-buttons {
+  background: #e53935; /* Red for Delete */
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.delete-buttons:hover {
+  background: #d32f2f; /* Darker red for hover */
+  transform: translateY(-1px); /* Subtle lift */
+  box-shadow: 0 6px 12px rgba(229, 57, 53, 0.4); /* Shadow for depth */
+}
+
+.delete-buttons:active {
+  transform: translateY(0);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  font-style: italic;
+}

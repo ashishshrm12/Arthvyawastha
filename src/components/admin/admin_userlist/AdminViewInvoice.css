@@ -1,0 +1,130 @@
+.admin-view-invoice {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #eaeaea;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .back-button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background: #45a049;
+  }
+  
+  .view-invoice-wrappers {
+    /* background: #2a2a2a; */
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  .view-invoice-headers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #444;
+    color: #000;
+}
+.customer-detailss {
+    display: flex;
+    align-items: center;
+}
+
+.view-images {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #45a049;
+}
+
+.customer-detailss .customer-name-emails .customer-names{
+    color: #000;
+}
+
+.customer-infos {
+    display: flex;
+    flex-direction: column; 
+}
+
+.customer-infos p {
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+.customer-names {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.shop-detailss {
+    text-align: right;
+}
+
+.shop-detailss h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #4caf50;
+}
+
+.shop-detailss p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    /* color: #b0b0b0; */
+    color: #000;
+}
+
+  
+.product-tables {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+  
+  .product-tables th,
+  .product-tables td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .product-tables th {
+    background: #4caf50;
+    color: white;
+  }
+  .product-tables td {
+    
+    color: #000;
+  }
+  
+  .print-invoices {
+    background: #ffa726;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .print-invoices:hover {
+    background: #fb8c00;
+  }
+  

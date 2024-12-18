@@ -1,0 +1,210 @@
+/* Container */
+.user-managements {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+  color: #eaeaea;
+}
+
+/* Header */
+.headerss {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #c00101;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(206, 96, 96, 0.4);
+}
+
+/* Add Owner Section */
+.add-owner-sectionss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-fieldss {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #262626;
+  color: #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.input-fieldss:focus {
+  border-color: #cb0f0f;
+  box-shadow: 0 0 8px rgba(220, 93, 93, 0.5);
+  outline: none;
+}
+
+.add-buttonss {
+  background: linear-gradient(145deg, #cb0f0f, #fc4a4a);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-buttonss:hover {
+  background: linear-gradient(145deg, #cb0f0f, #ff0606);
+  transform: translateY(-0.5px);
+  box-shadow: 0 2px 4px rgba(243, 98, 98, 0.4);
+}
+
+/* Search Section */
+.search-sectionss {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-barss {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #262626;
+  color: #eaeaea;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-barss:focus {
+  border-color: #cb0f0f;
+  box-shadow: 0 0 8px rgba(254, 4, 4, 0.6); /* Green glow */
+  outline: none;
+}
+
+.sub-headerss {
+  font-size: 1.5rem;
+  color: #eaeaea;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333; /* Professional divider */
+  padding-bottom: 10px;
+}
+
+
+
+
+/* Table */
+.owner-tabless {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.owner-tabless th, .owner-tabless td {
+  padding: 15px;
+  text-align: left;
+  color: #eaeaea;
+  border-bottom: 1px solid #333;
+}
+
+.owner-tabless th {
+  background-color: #333;
+  color: #b22828;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.owner-tabless tr:hover {
+  background-color: #3a3a3a;
+  transition: all 0.3s ease;
+}
+
+/* delete button */
+.delete-buttonss {
+  background: #e53935; /* Professional red for Delete */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.delete-buttonss:hover {
+  background: #d32f2f; /* Darker red for hover */
+  transform: translateY(-1px); /* Subtle lift on hover */
+  /* box-shadow: 0 4px 2px rgba(229, 57, 53, 0.3); Shadow for depth */
+}
+
+.delete-buttonss:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+
+.add-invoice-buttonss {
+  background: #4caf50; /* Professional red for Delete */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.add-invoice-buttonss:hover {
+  background: #45a049; /* Darker red for hover */
+  transform: translateY(-1px); /* Subtle lift on hover */
+  /* box-shadow: 0 4px 2px rgba(183, 246, 164, 0.3); Shadow for depth */
+}
+
+.add-invoice-buttonss:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+
+.view-invoices-buttonss {
+  background: #564caf; /* Professional red for Delete */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.view-invoices-buttonss:hover {
+  background: #8274ff; /* Darker red for hover */
+  transform: translateY(-1px); /* Subtle lift on hover */
+  /* box-shadow: 0 4px 2px rgba(183, 246, 164, 0.3); Shadow for depth */
+}
+
+.view-invoices-buttonss:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+
+/* No Results */
+.no-resultss {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  font-style: italic;
+}

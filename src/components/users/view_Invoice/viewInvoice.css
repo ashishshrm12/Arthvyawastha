@@ -1,0 +1,174 @@
+
+.view-invoice {
+    padding: 20px;
+    background-color: #1e1e1e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.view-invoice-wrapper {
+    /* background-color: #2c2c2c; */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 794px; /* A4 width at 96 DPI */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+}
+
+.view-invoice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #444;
+    color: #000;
+}
+
+.customer-details {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.view-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #3498db;
+}
+
+.customer-details .customer-name-email .customer-name{
+    color: #000;
+}
+
+
+/* Adjusted to stack name and email vertically */
+.customer-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+.customer-info p {
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+.customer-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.shop-details {
+    text-align: right;
+}
+
+.shop-details h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #3498db;
+}
+
+.shop-details p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #b0b0b0;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #444;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.product-table th {
+    /* background-color: #3498db; */
+    background-color: #222;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.product-table thead th {
+    background-color: #3498db;
+    /* background-color: #000; */
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+.product-table tfoot td {
+    font-weight: 600;
+    font-size: 1.2rem;
+    /* background-color: #2a2a2a; */
+    /* background-color: #000; */
+    background-color: #00182b;
+
+}
+
+.print-invoice {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.print-invoice:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .view-invoice {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .view-invoice-wrapper {
+        box-shadow: none;
+        border: none;
+        max-width: 794px;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .print-invoice {
+        display: none;
+    }
+
+    .product-table th {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .product-table td, .product-table th, .product-table tfoot td {
+        color: #000;
+    }
+}

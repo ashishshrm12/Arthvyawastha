@@ -6,9 +6,18 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^4.4.4",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.12.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.10",
+    "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.13.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

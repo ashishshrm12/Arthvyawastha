@@ -1,0 +1,155 @@
+.footer{
+    background: #000;
+}
+.footer .ff{
+    width: 100%;
+    position: absolute;
+    /* bottom: ; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: var(--gray);
+    padding: 100px 0px 30px;
+    /* border-top-left-radius: 125px;
+    border-top-right-radius: 125px; */
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer .ff .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer .ff .row .col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer .ff .row .col:nth-child(2), .footer .row .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.footer .ff .row .col .logo{
+    height: 70px;
+    width: 100px;
+    margin: 30px;
+}
+
+.footer .ff .row .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer .ff .row .col .email-id{
+    width: fit-content;
+    border-bottom: 1px solid var(--bg-black-50);
+    margin: 20px 0;
+    text-transform: lowercase;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--gray);
+
+}
+
+.footer .ff .row .col form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--bg-black-50);
+    margin-bottom: 50px;
+}
+
+.footer .ff .row .col form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer .ff .row .col form input{
+    width: 100%;
+    background: transparent;
+    color: var(--bg-black-50);
+    border: 0;
+    outline: none;
+}
+
+.footer .ff .row .col form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer .ff .row .col form button .fa-sharp{
+    font-size: 16px;
+    color: var(--bg-black-100);
+}
+
+.footer .ff .row .col .social-icon .fab{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    background: var(--pink);
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer .ff .row .col .social-icon .fab:hover{
+    background: var(--violet);
+}
+.footer .ff hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid var(--bg-black-50);
+    margin: 20px auto;
+}
+.footer .ff .text-center {
+    text-align: center;
+    /* color: grey; */
+    color: var(--bg-black-50);
+    /* top:12px0; */
+}
+
+.footer .ff .row .col h3 .underline{
+    width: 100%;
+    height: 5px;
+    background: var(--gray);
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    overflow: hidden;
+}
+.footer .ff .row .col h3 .underline span{
+    width: 15px;
+    height: 100%;
+    background: var(--pink);
+    border-radius: 3px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left:-20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
